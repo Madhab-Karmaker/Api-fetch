@@ -1,0 +1,24 @@
+[10:36 AM, 8/31/2022] Fathi Cub: 
+
+1. Total Products API: http://baahstore.com/wp-json/wc/v3/reports/products/totals -- Here show the data from "Simple Prodcut"
+
+2. https://woocommerce.github.io/woocommerce-rest-api-docs/?php#retrieve-sales-report এখানে Query করে লাস্ট ৩০ দিনের "net_sales": টা দেখাতে হবে। 
+
+৩. http://baahstore.com/wp-json/wc/v3/reports/orders/totals এখান থেকে প্রসেসিং অর্ডার এর ডাটা নিতে হবে। 
+
+৪. https://woocommerce.github.io/woocommerce-rest-api-docs/?php#retrieve-sales-report এখানে Query করে লাস্ট ৩০ দিনের "total_sales": টা দেখাতে হবে। 
+
+৫. https://woocommerce.github.io/woocommerce-rest-api-docs/?php#retrieve-sales-report এখানে Query করে লাস্ট ৩০ দিনের "average_sales": টা দেখাতে হবে। 
+
+৫.১: http://baahstore.com/wp-json/wc/v3/reports/customers/totals টোটাল কাস্টমার ডাটা "non_paying" থেকে নিতে হবে
+
+৫.২: Total Sales (Last Month) http://baahstore.com/wp-json/wc/v3/reports/sales?period=last_month এখানে থেকে "total_sales" ডাটা নিতে হবে
+
+৫.৩: net_sales (Last Month) http://baahstore.com/wp-json/wc/v3/reports/sales?period=last_month এখানে থেকে "net_sales" ডাটা নিতে হবে
+
+৬: http://baahstore.com/wp-json/wc/v3/reports/sales?period=month এখানে বর্তমান মাসের "total_sales" এর ডাটা নিতে হবে। 
+
+৭: এটা একটা পাই চার্ট হবে যেখানে http://baahstore.com/wp-json/wc/v3/reports/sales?period=week প্রথমে সপ্তাহ এর চার্ট দেখাবে, http://baahstore.com/wp-json/wc/v3/reports/sales?period=month পরে এই মাসের টা দেখাবে যেখানে বাটন এ ক্লিক করলে সপ্তাহ এর টা সরে গিয়ে এটা আসবে,http://baahstore.com/wp-json/wc/v3/reports/sales?period=last_month [Previous Month] নামে একটা বাটন থাকবে যাতে ক্লিক করলে এই লিঙ্ক এর ডাটা দেখাবে,  http://baahstore.com/wp-json/wc/v3/reports/sales?period=year বছর এর টাও এভাবে দেখাবে। লিঙ্ক থেকে "total_sales", "net_sales", "total_orders", "average_sales" এর ডাটা দেখাবে। 
+
+না বুঝলে আমাকে জানায়েন।
+[10:38 AM, 8/31/2022] Fathi Cub: আর WooCommerce এর documentation এর স্যাম্পল কোড দেখে হেল্প নিতে পারেন।
